@@ -1,4 +1,7 @@
 # api-docs
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7f70f895-d2c4-4377-b199-d0e3bd8bf2ba/deploy-status)](https://app.netlify.com/sites/docs-api-melle/deploys)
+
 Documentation for [melle.online](https://melle.online) API.
 
 ## Deploy
