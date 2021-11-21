@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#ping" class="md-skip">
           Перейти к содержанию
         </a>
       
@@ -251,9 +251,53 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Пинг
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Пинг
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    Введение
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    Аутентификация
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api" class="md-nav__link">
+    Выполнение вызова API
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -326,6 +370,35 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    Введение
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    Аутентификация
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api" class="md-nav__link">
+    Выполнение вызова API
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -337,7 +410,24 @@
               
                 
                 
-                <h1 id="_1">Пинг<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+                <h1 id="ping">Ping<a class="headerlink" href="#ping" title="Permanent link">&para;</a></h1>
+<h2 id="_1">Введение<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>В этом примере мы расскажем вам о том, что нужно сделать для успешного вызова нашего API и получения ответа.</p>
+<h2 id="_2">Аутентификация<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>Прежде всего, для использования нашего сайта вам потребуется аутентификация. Вы можете получить ключ и секрет API, <a href="mailto:admin@melle.online">связавшись с нашей командой</a>.</p>
+<p>После получения ключа и секрета API вам нужно будет настроить с их помощью свое окружение. Более подробно процесс аутентификации описан в <a href="../auth/">документации по аутентификации</a>.</p>
+<h2 id="api">Выполнение вызова API<a class="headerlink" href="#api" title="Permanent link">&para;</a></h2>
+<p>Следующим шагом будет вызов API. Вы должны использовать <a href="../auth/#url">базовый URL</a> и выполнить <code>GET</code> запрос к <code>/ping</code>:</p>
+<div class="highlight"><pre><span></span><code>GET /ping
+</code></pre></div>
+<div class="admonition note">
+<p>Полный url для этого примера будет равен <code>https://api.melle.online/api/v1/opencart/ping</code>.</p>
+</div>
+<p>Полученный ответ должен содержать следующее содержимое:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="nt">&quot;message&quot;</span><span class="p">:</span> <span class="s2">&quot;pong&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
                 
               
               

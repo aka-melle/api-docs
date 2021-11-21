@@ -293,9 +293,53 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Аутентификация
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Аутентификация
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    Пример запроса
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    Пример заголовков
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#url" class="md-nav__link">
+    Базовый URL
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -326,6 +370,35 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    Пример запроса
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    Пример заголовков
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#url" class="md-nav__link">
+    Базовый URL
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -338,6 +411,24 @@
                 
                 
                 <h1 id="_1">Аутентификация<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<p>Аутентификация зависит от правильной установки заголовков в каждом запросе со следующими данными:</p>
+<ul>
+<li><strong>Accept</strong> и <strong>Content-Type</strong> должны быть <code>application/json</code>.</li>
+<li><strong>Authorization</strong> - это API ключ вашего приложения, должен быть <code>Bearer [YOUR_API_KEY]</code>.</li>
+</ul>
+<h2 id="_2">Пример запроса<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<ul>
+<li>API Key: <code>YOUR_API_KEY</code></li>
+<li><code>GET</code> запрос к <code>https://api.melle.online/api/v1/opencart/ping</code></li>
+</ul>
+<h2 id="_3">Пример заголовков<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>Accept: application/json
+Content-Type: application/json
+Authorization: Bearer YOUR_API_KEY
+</code></pre></div>
+<h2 id="url">Базовый URL<a class="headerlink" href="#url" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>https://api.melle.online/api/v1/opencart/
+</code></pre></div>
                 
               
               
