@@ -1,0 +1,81 @@
+# Project information
+site_name: API Docs | melle.online
+site_url: https://docs.api.melle.com/
+site_author: melle.online
+site_description: >-
+  For internal use only
+
+# Copyright
+copyright: Copyright &copy; 2021 melle.online
+
+# Configuration
+theme:
+  name: material
+  language: en
+  features:
+    - tabs
+    - header.hide
+    - search.highlight
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: assets/logo.svg
+  logo: assets/logo.svg
+
+# Plugins
+plugins:
+  - search:
+      lang: en
+
+# Customization
+extra:
+  version:
+    provider: mike
+  social:
+    - icon: fontawesome/brands/instagram
+      link: https://instagram.com/melle.online
+
+extra_css:
+  - stylesheets/extra.css
+
+# Extensions
+markdown_extensions:
+  - markdown.extensions.admonition
+  - markdown.extensions.attr_list
+  - markdown.extensions.def_list
+  - markdown.extensions.footnotes
+  - markdown.extensions.meta
+  - markdown.extensions.toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      check_paths: true
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Page tree
+nav:
+  - Getting started:
+    - Get started: index.md
+  - Examples:
+    - Ping Example: ping-example.md
+  - More Information:
+    - Authentication: auth.md
