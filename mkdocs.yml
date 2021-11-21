@@ -1,9 +1,8 @@
 # Project information
-site_name: API Docs | melle.online
+site_name: API Документация | melle.online
 site_url: https://docs.api.melle.com/
 site_author: melle.online
-site_description: >-
-  For internal use only
+site_description: Только для внутреннего пользования.
 
 # Copyright
 copyright: Copyright &copy; 2021 melle.online
@@ -11,7 +10,7 @@ copyright: Copyright &copy; 2021 melle.online
 # Configuration
 theme:
   name: material
-  language: en
+  language: ru
   features:
     - tabs
     - header.hide
@@ -25,7 +24,7 @@ theme:
 # Plugins
 plugins:
   - search:
-      lang: en
+      lang: ru
 
 # Customization
 extra:
@@ -73,9 +72,9 @@ markdown_extensions:
 
 # Page tree
 nav:
-  - Getting started:
-    - Get started: index.md
-  - Examples:
-    - Ping Example: ping-example.md
-  - More Information:
-    - Authentication: auth.md
+  - Приступая к работе:
+    - Вступление: index.md
+  - Примеры:
+    - Пинг: ping-example.md
+  - Больше информации:
+    - Аутентификация: auth.md

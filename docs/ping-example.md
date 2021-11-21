@@ -1,1 +1,1 @@
-# Ping Example
+# Пинг
