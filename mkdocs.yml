@@ -76,5 +76,7 @@ nav:
     - Вступление: index.md
   - Примеры:
     - Пинг: ping-example.md
+    - Оффер: offer-example.md
+    - Товар: product-example.md
   - Больше информации:
     - Аутентификация: auth.md
