@@ -13,14 +13,14 @@
         <meta name="author" content="melle.online">
       
       
-        <link rel="canonical" href="https://docs.api.melle.com/1.0/auth/">
+        <link rel="canonical" href="https://docs.api.melle.com/1.0/offer-example/">
       
       <link rel="icon" href="../assets/logo.svg">
       <meta name="generator" content="mkdocs-1.2.1, mkdocs-material-7.1.8">
     
     
       
-        <title>Аутентификация - API Документация</title>
+        <title>Оффер - API Документация</title>
       
     
     
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Аутентификация
+              Оффер
             
           </span>
         </div>
@@ -217,12 +217,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
       
       <label class="md-nav__link" for="__nav_2">
         Примеры
@@ -250,11 +252,79 @@
             
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../offer-example/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Оффер
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Оффер
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    Введение
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    Аутентификация
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    Просмотреть оффер
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    Обновить цену
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    Обновить количество
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -283,14 +353,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
       
       <label class="md-nav__link" for="__nav_3">
         Больше информации
@@ -306,65 +374,11 @@
             
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Аутентификация
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../auth/" class="md-nav__link">
         Аутентификация
       </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="Содержание">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Содержание
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    Пример запроса
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    Пример заголовков
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#url" class="md-nav__link">
-    Базовый URL
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -402,21 +416,35 @@
       
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
-    Пример запроса
+    Введение
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
-    Пример заголовков
+    Аутентификация
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#url" class="md-nav__link">
-    Базовый URL
+  <a href="#_4" class="md-nav__link">
+    Просмотреть оффер
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    Обновить цену
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    Обновить количество
   </a>
   
 </li>
@@ -434,25 +462,59 @@
               
                 
                 
-                <h1 id="_1">Аутентификация<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<p>Аутентификация зависит от правильной установки заголовков в каждом запросе со следующими данными:</p>
-<ul>
-<li><strong>Accept</strong> и <strong>Content-Type</strong> должны быть <code>application/json</code>.</li>
-<li><strong>Authorization</strong> - это API ключ вашего приложения, должен быть <code>Bearer [YOUR_API_KEY]</code>.</li>
-</ul>
-<h2 id="_2">Пример запроса<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<ul>
-<li>API Key: <code>YOUR_API_KEY</code></li>
-<li><code>GET</code> запрос к <code>https://api.melle.online/api/v1/opencart/ping</code></li>
-</ul>
-<h2 id="_3">Пример заголовков<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>Accept: application/json
-Content-Type: application/json
-Authorization: Bearer YOUR_API_KEY
+                <h1 id="_1">Оффер<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h2 id="_2">Введение<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>В этом примере мы расскажем вам о том, что нужно сделать для успешного вызова нашего API и получения ответа.</p>
+<h2 id="_3">Аутентификация<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p>Прежде всего, для использования нашего сайта вам потребуется аутентификация. Вы можете получить ключ и секрет API, <a href="mailto:admin@melle.online">связавшись с нашей командой</a>.</p>
+<p>После получения ключа и секрета API вам нужно будет настроить с их помощью свое окружение. Более подробно процесс аутентификации описан в <a href="../auth/">документации по аутентификации</a>.</p>
+<h2 id="_4">Просмотреть оффер<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p>Предположим вы хотите просмотреть оффер с <a href="https://en.wikipedia.org/wiki/Universally_unique_identifier">GUID</a> <code>7fcdfb34-cf28-43d6-908b-949361c8ce2f</code>.</p>
+<p>Для того чтобы получить текущее состояние оффера в системе выполнитите <code>GET</code> запрос по указанному ниже URL используя <a href="https://en.wikipedia.org/wiki/Universally_unique_identifier">GUID</a> из <a href="https://1c.ru/">1C</a>.</p>
+<div class="highlight"><pre><span></span><code><span class="err">GET</span> <span class="err">/o</span><span class="kc">ffers</span><span class="err">/</span><span class="mi">7</span><span class="kc">f</span><span class="err">cd</span><span class="kc">f</span><span class="err">b</span><span class="mi">34-</span><span class="err">c</span><span class="kc">f</span><span class="mi">28-43</span><span class="err">d</span><span class="mi">6-908</span><span class="err">b</span><span class="mi">-949361</span><span class="err">c</span><span class="mi">8</span><span class="err">ce</span><span class="mi">2</span><span class="kc">f</span>
 </code></pre></div>
-<h2 id="url">Базовый URL<a class="headerlink" href="#url" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>https://api.melle.online/api/v1/opencart/
+<p>Ответ:
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;7fcdfb34-cf28-43d6-908b-949361c8ce2f&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;product_id&quot;</span><span class="p">:</span> <span class="s2">&quot;510e03eb-513d-4a1e-86e7-be57b3039597&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;quantity&quot;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+        <span class="nt">&quot;subtract&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;price&quot;</span><span class="p">:</span> <span class="mi">1399</span><span class="p">,</span>
+        <span class="nt">&quot;barcode&quot;</span><span class="p">:</span> <span class="s2">&quot;12345679&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;product_code&quot;</span><span class="p">:</span> <span class="s2">&quot;Travel&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;name_for_print&quot;</span><span class="p">:</span> <span class="s2">&quot;Колготки Трэвэл (Travel)&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;image&quot;</span><span class="p">:</span> <span class="s2">&quot;some_image.png&quot;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></p>
+<h2 id="_5">Обновить цену<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<p>Для того чтобы обновить цену, необходимо выполнить <code>PUT</code> запрос содержащий json с информацией о цене:</p>
+<div class="highlight"><pre><span></span><code><span class="err">PUT</span> <span class="err">/o</span><span class="kc">ffers</span><span class="err">/</span><span class="mi">7</span><span class="kc">f</span><span class="err">cd</span><span class="kc">f</span><span class="err">b</span><span class="mi">34-</span><span class="err">c</span><span class="kc">f</span><span class="mi">28-43</span><span class="err">d</span><span class="mi">6-908</span><span class="err">b</span><span class="mi">-949361</span><span class="err">c</span><span class="mi">8</span><span class="err">ce</span><span class="mi">2</span><span class="kc">f</span><span class="err">/price</span>
+
+<span class="p">{</span>
+    <span class="nt">&quot;price&quot;</span><span class="p">:</span> <span class="mi">999</span>
+<span class="p">}</span>
 </code></pre></div>
+<p>Ответ:
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="nt">&quot;message&quot;</span><span class="p">:</span> <span class="s2">&quot;Offer price updated.&quot;</span>
+<span class="p">}</span>
+</code></pre></div></p>
+<h2 id="_6">Обновить количество<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<p>Для того чтобы обновить количество, необходимо выполнить <code>PUT</code> запрос содержащий json с информацией о количестве единиц товара:</p>
+<div class="highlight"><pre><span></span><code><span class="err">PUT</span> <span class="err">/o</span><span class="kc">ffers</span><span class="err">/</span><span class="mi">7</span><span class="kc">f</span><span class="err">cd</span><span class="kc">f</span><span class="err">b</span><span class="mi">34-</span><span class="err">c</span><span class="kc">f</span><span class="mi">28-43</span><span class="err">d</span><span class="mi">6-908</span><span class="err">b</span><span class="mi">-949361</span><span class="err">c</span><span class="mi">8</span><span class="err">ce</span><span class="mi">2</span><span class="kc">f</span><span class="err">/qua</span><span class="kc">nt</span><span class="err">i</span><span class="kc">t</span><span class="err">y</span>
+
+<span class="p">{</span>
+    <span class="nt">&quot;quantity&quot;</span><span class="p">:</span> <span class="mi">3</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>Ответ:
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="nt">&quot;message&quot;</span><span class="p">:</span> <span class="s2">&quot;Offer quantity updated.&quot;</span>
+<span class="p">}</span>
+</code></pre></div></p>
+<p>Запрос считается успешным если в ответ получен код <code>200</code>.</p>
                 
               
               
@@ -472,7 +534,7 @@ Authorization: Bearer YOUR_API_KEY
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../product-example/" class="md-footer__link md-footer__link--prev" aria-label="Назад: Товар" rel="prev">
+        <a href="../ping-example/" class="md-footer__link md-footer__link--prev" aria-label="Назад: Пинг" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -481,11 +543,26 @@ Authorization: Bearer YOUR_API_KEY
               <span class="md-footer__direction">
                 Назад
               </span>
-              Товар
+              Пинг
             </div>
           </div>
         </a>
       
+      
+        
+        <a href="../product-example/" class="md-footer__link md-footer__link--next" aria-label="Вперед: Товар" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Вперед
+              </span>
+              Товар
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
       
     </nav>
   
