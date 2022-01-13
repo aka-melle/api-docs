@@ -321,6 +321,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    Массовое обновление офферов
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -449,6 +456,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    Массовое обновление офферов
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -512,6 +526,28 @@
 <p>Ответ:
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
     <span class="nt">&quot;message&quot;</span><span class="p">:</span> <span class="s2">&quot;Offer quantity updated.&quot;</span>
+<span class="p">}</span>
+</code></pre></div></p>
+<p>Запрос считается успешным если в ответ получен код <code>200</code>.</p>
+<h2 id="_7">Массовое обновление офферов<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<div class="admonition warning">
+<p>Обновление будет происходить в очереди, и может отобразится не сразу на стороне магазина.</p>
+</div>
+<div class="highlight"><pre><span></span><code><span class="err">POST</span> <span class="err">/o</span><span class="kc">ffers</span><span class="err">/upda</span><span class="kc">te</span>
+
+<span class="p">{</span>
+    <span class="nt">&quot;offers&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;7fcdfb34-cf28-43d6-908b-949361c8ce2f&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;price&quot;</span><span class="p">:</span> <span class="mi">999</span><span class="p">,</span>
+            <span class="nt">&quot;quantity&quot;</span><span class="p">:</span> <span class="mi">3</span>
+        <span class="p">}</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>Ответ:
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="nt">&quot;message&quot;</span><span class="p">:</span> <span class="s2">&quot;Update queued.&quot;</span>
 <span class="p">}</span>
 </code></pre></div></p>
 <p>Запрос считается успешным если в ответ получен код <code>200</code>.</p>
