@@ -13,7 +13,7 @@ mike deploy --push --update-aliases 1.0 v1
 
 ## Dev
 
-```
+```bash
 mkdocs serve --dev-addr=127.0.0.1:8080
 ```
 
